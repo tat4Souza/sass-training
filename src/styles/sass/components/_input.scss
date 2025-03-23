@@ -1,0 +1,60 @@
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid $color-light-cream;
+  border-bottom-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  position: relative;
+  transition: all ease 0.2s;
+
+  @include media(betweenTabPortLand) {
+    width: 35%;
+  }
+
+  @include media(tab-port) {
+    width: 45%;
+  }
+
+  @include media(phonexs) {
+    width: 90%;
+  }
+
+  &:focus-within {
+    transform: scale(1.02);
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
+  }
+
+  &__icon {
+    font-size: $default-size;
+    color: $color-light-cream;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $color-light-cream;
+    font-family: "Poppins";
+    padding-left: 0;
+    transition: all 0.2s;
+    backface-visibility: none;
+
+    &::placeholder {
+      color: $color-light-cream;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 80%;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.5px;
+    position: absolute;
+    background-color: $color-white;
+  }
+}

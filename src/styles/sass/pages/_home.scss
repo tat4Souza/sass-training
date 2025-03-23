@@ -1,0 +1,97 @@
+.section-characters {
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  transform: translateY(-1rem);
+  z-index: 1;
+
+  @include media(betweenTabPortLand) {
+    z-index: 0;
+    height: 180vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 95%, 0% 100%);
+  }
+
+  @include media(phonexs) {
+    z-index: 0;
+    height: 240vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 98%, 0% 100%);
+  }
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1rem solid $gray-800;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.section-fullbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200rem;
+  transform: translateY(-20rem);
+  position: relative;
+  padding-bottom: 40rem;
+  z-index: 0;
+
+  @include media(betweenTabPortLand) {
+    height: 275rem;
+  }
+
+  @include media(phone) {
+    height: 470rem;
+  }
+
+  @include media(phonexs) {
+    height: 440rem;
+  }
+}
+
+.section-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 160rem;
+  transform: translateY(-40rem);
+  position: relative;
+  clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: $gray-700;
+
+  @include media(tab-land) {
+    height: 150rem;
+  }
+
+  @include media(betweenTabPortLand) {
+    clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  @include media(phonexs) {
+    clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.section-forms {
+  transform: translateY(-60rem);
+  background-image: linear-gradient(to bottom, $gray-700, $gray-800);
+  height: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -60rem;
+  // border-top: 1px solid $color-light-cream;
+}

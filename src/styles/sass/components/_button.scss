@@ -1,0 +1,22 @@
+.button {
+  font-family: "Poppins";
+  font-weight: 600;
+  outline: none;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  border: none;
+  background-color: $gray-790;
+  font-size: 1.4rem;
+  color: $color-light-cream;
+  border-radius: $border-small;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    transform: translateY(-0.2rem);
+  }
+}

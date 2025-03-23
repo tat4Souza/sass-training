@@ -1,0 +1,356 @@
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  transition: all 0.5s;
+
+  //CARDS FUNCTIONALLITY
+
+  &-container {
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1rem;
+
+    @include media(tab-land) {
+      width: 65%;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-light-cream;
+    padding: 4rem 2rem;
+    transition: all 0.8s;
+    height: 45vh;
+    border: 1px solid $gray-800;
+
+    clip-path: polygon(
+      0% 0%,
+      10% 0%,
+      40% 0%,
+      50% 3%,
+      60% 0%,
+      90% 0%,
+      100% 0%,
+      100% 100%,
+      90% 100%,
+      60% 100%,
+      50% 97%,
+      40% 100%,
+      10% 100%,
+      0% 100%
+    );
+    position: relative;
+    z-index: 1;
+
+    @include media(tab-land) {
+      gap: 0.8rem;
+      padding: 2rem;
+    }
+  }
+
+  &__side-opened {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    transform: rotateY(180deg);
+    background-color: $gray-700;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+
+    cursor: pointer;
+    .card__side-closed {
+      transform: rotateY(-180deg);
+      background-color: $gray-700;
+      z-index: 0;
+    }
+
+    .card__side-opened {
+      background-color: $gray-790;
+      transform: rotateY(0deg);
+      z-index: 1;
+    }
+  }
+
+  //FRONT SIDE STLYING
+
+  &__characters-info {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid $gray-450;
+    color: $gray-450;
+    font-size: 1.4rem;
+    border-radius: 10rem;
+    width: 75%;
+    padding: 0.5rem;
+  }
+
+  &__div-image-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image-box {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid $color-black;
+  }
+
+  &__image {
+    max-height: 15rem;
+
+    @include media(tab-land) {
+      max-height: 16rem;
+    }
+  }
+
+  &__description {
+    font-family: "Special Elite";
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  //BACK SIDE STYLING
+
+  &__banner {
+    height: inherit;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-size: 35rem;
+    background-position: center;
+    border: 1px solid $color-black;
+  }
+
+  &__phrase {
+    position: absolute;
+    font-family: "Libre Barcode 39 Extended Text";
+    font-size: 3rem;
+    display: inline-block;
+    letter-spacing: -0.5rem;
+    min-width: 24rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+    overflow: hidden;
+    left: 50%;
+    background-color: $color-light-cream;
+    color: $gray-550;
+    padding: 1rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: 3px solid $gray-790;
+    padding-top: 1rem;
+    margin-bottom: -2.5rem;
+    border-top: 1px solid $gray-790;
+  }
+
+  &__image-description {
+    font-family: "Special Elite";
+    position: absolute;
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 75%;
+    font-size: 1.3rem;
+    color: $color-light-cream;
+    background-color: rgba($color-black, 0.2);
+    top: 25%;
+    text-align: center;
+    line-height: 1.6rem;
+
+    &::first-letter {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__image-description:after {
+    content: "";
+    width: 110%;
+    height: 0.5px;
+    background-color: $gray-450;
+    position: absolute;
+    top: -8rem;
+    right: -5%;
+  }
+
+  //Media styles
+
+  @include media(betweenTabPortLand) {
+    display: flex;
+    justify-content: center;
+
+    &-container {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      padding: 2rem 4rem 0 1rem;
+
+      h4 {
+        position: absolute;
+        top: 2rem;
+        left: 65%;
+        display: inline-block;
+        width: 100%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__side {
+      width: 62%;
+      border-radius: $border-small;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      height: 30svh;
+    }
+
+    &__side-opened {
+      display: none;
+    }
+
+    &:hover {
+      transform: translateY(0);
+      .card__side-closed {
+        transform: rotateY(0);
+        background-color: $color-light-cream;
+      }
+
+      .card__side-opened {
+        background-color: $gray-790;
+        transform: rotateY(0deg);
+      }
+    }
+
+    &__characters-info {
+      width: 45%;
+    }
+
+    &__image-box {
+      margin-left: 2.5rem;
+      float: right;
+    }
+
+    &__image {
+      max-height: 15rem;
+    }
+
+    &__description {
+      margin-left: -3.5rem;
+      margin-top: 2rem;
+      text-indent: 3rem;
+      display: -webkit-box;
+      line-clamp: 0;
+      -webkit-line-clamp: 0;
+      -webkit-box-orient: horizontal;
+    }
+  }
+
+  @include media(tab-port) {
+    &__side {
+      width: 85%;
+    }
+  }
+
+  @include media(phone) {
+    &-container {
+      width: 90%;
+    }
+
+    &__container {
+      height: 24rem;
+    }
+
+    &__image-box {
+      margin-left: 0;
+    }
+
+    &__side {
+      gap: 2rem;
+      width: 100%;
+    }
+
+    &__image {
+      max-height: 12rem;
+    }
+  }
+
+  @include media(phonexs) {
+    &-container {
+      width: 95%;
+    }
+
+    &__container {
+      height: 80%;
+      width: 100%;
+
+      h4 {
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    &__side {
+      gap: 2rem;
+      width: 100%;
+      height: 50svh;
+    }
+
+    &__image-box {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    &__image {
+      max-height: 12rem;
+    }
+
+    &__description {
+      position: absolute;
+      top: 58%;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+  }
+}

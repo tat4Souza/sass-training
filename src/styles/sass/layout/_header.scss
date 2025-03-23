@@ -1,0 +1,12 @@
+.header {
+  &__logo-box {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: $gray-800;
+  }
+
+  &__logo {
+    height: 11rem;
+  }
+}

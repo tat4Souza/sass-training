@@ -1,0 +1,63 @@
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  width: 75%;
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $color-light-cream;
+  z-index: 1;
+  text-shadow: 2px 0 $gray-700, -2px 0 $gray-700, 0 2px $gray-700,
+    0 -2px $gray-700, 1px 1px $gray-700, -1px -1px $gray-700, 1px -1px $gray-700,
+    -1px 1px $gray-700;
+
+  &::first-letter {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-quaternary {
+  font-size: 4rem;
+
+  &--1 {
+    color: rgba($color-light-cream, 0.8);
+    text-transform: uppercase;
+
+    &::first-letter {
+      font-size: 5.5rem;
+    }
+  }
+
+  &--2 {
+    color: rgba($color-light-cream, 0.8);
+    background: linear-gradient(
+        to right,
+        rgba($color-light-cream, 0.8),
+        rgba($color-light-cream, 0.8)
+      )
+      no-repeat;
+    background-size: 100% 2px;
+    background-position: left bottom;
+  }
+
+  &--dark-text {
+    color: $gray-700;
+  }
+
+  &--dark-underline {
+    background: linear-gradient(to right, $gray-700, $gray-700) no-repeat;
+    background-size: 100% 2px;
+    background-position: left bottom;
+  }
+}
+
+.label {
+  font-size: 1.4rem;
+  color: $color-white;
+  font-family: "Poppins";
+  font-weight: 200;
+}

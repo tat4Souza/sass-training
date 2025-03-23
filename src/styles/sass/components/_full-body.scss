@@ -1,0 +1,143 @@
+.fullbody-container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50rem;
+
+  @include media(tab-land) {
+    width: 90%;
+  }
+
+  @include media(betweenTabPortLand) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 35rem;
+  }
+
+  @include media(phone) {
+    grid-template-columns: 1fr;
+  }
+
+  @include media(phonexs) {
+    width: 100%;
+  }
+}
+
+.fullbody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &__image-box {
+    height: 85rem;
+    position: relative;
+
+    @include media(tab-port) {
+      height: 75rem;
+    }
+
+    @include media(phonexs) {
+      height: 65rem;
+    }
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__image-box:before {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    background: rgba($color-black, 0.4);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(1rem);
+  }
+
+  &__texts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $gray-700;
+
+    @include media(tab-port) {
+      width: 60%;
+    }
+  }
+
+  &__texts {
+    h4 {
+      @include media(phonexs) {
+        font-size: 3rem;
+      }
+    }
+
+    label {
+      font-size: $default-size;
+      color: $gray-350;
+      background: linear-gradient(to right, $gray-350, $gray-350) no-repeat;
+      background-size: 100% 2px;
+      background-position: left bottom;
+
+      @include media(phonexs) {
+        font-size: 1.4rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $gray-450;
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+
+      @include media(phonexs) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.p-gradient {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 8rem;
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($gray-800, 0.3),
+    transparent
+  );
+  background-clip: text;
+  color: transparent;
+
+  @include media(betweenTabPortLand) {
+    top: 9.5%;
+    font-size: 6.8rem;
+  }
+
+  @include media(tab-port) {
+    top: 10%;
+    font-size: 4.8rem;
+  }
+
+  @include media(phone) {
+    top: 6.5%;
+    font-size: 4.5rem;
+  }
+
+  @include media(phonexs) {
+    top: 6%;
+    font-size: 3rem;
+    width: 100%;
+  }
+}

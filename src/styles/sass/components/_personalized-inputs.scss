@@ -1,0 +1,129 @@
+.span-inputs {
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: $default-size;
+}
+
+//RADIO INPUTS
+
+input[type="radio"] {
+  display: none;
+
+  &:checked + span::before {
+    box-shadow: inset 0 0 0 0.6rem $gray-700;
+  }
+}
+
+.radio {
+  display: block;
+  cursor: pointer;
+
+  & span {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    font-weight: 600;
+
+    &::before {
+      content: "";
+      background-color: transparent;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.2rem $gray-700;
+    }
+  }
+}
+
+//DROPDOWNS
+
+.select-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    background: $gray-800;
+    width: 3rem;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    bottom: 1px;
+    border-top-right-radius: $border-small;
+    border-bottom-right-radius: $border-small;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: $color-light-cream transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.select {
+  position: relative;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $gray-700;
+  outline: none;
+  border: 1px solid $gray-350;
+  border-radius: $border-small;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  color: $gray-750;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+
+  &::placeholder {
+    color: $gray-350;
+  }
+
+  &:focus {
+    border: 1px solid $gray-800;
+  }
+
+  &__options {
+    position: absolute;
+    top: 90%;
+    list-style: none;
+    background-color: $color-light-cream;
+    border: 1px solid $gray-800;
+    cursor: pointer;
+    width: 100%;
+    z-index: 1;
+
+    & li {
+      padding: 0.8rem 1rem;
+      font-weight: 500;
+      font-size: 1.4rem;
+
+      &:hover {
+        background-color: $color-dark-cream;
+      }
+    }
+
+    &--focused {
+      background-color: $color-dark-cream;
+    }
+  }
+}
