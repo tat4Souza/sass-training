@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Projeto para treino de SASS
+Aplicação web com o propósito de praticar as habilidades adquiridas no curso oferecido pela Udemy: [**Advanced CSS and Sass: Flexbox, Grid, Animations and more.**](https://www.udemy.com/share/101Wmq3@d175uiXmGIfkya03NIEqhy-bOudDJdMLGJhyvZYyikkPkUQgATgJVFOg4PBVEfzZwA==/)
+<br> Projeto criado com o [Create React App](https://github.com/facebook/create-react-app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎞️ Preview
+*Preview em breve...*
 
-## Available Scripts
+## ✧ Objetivos
+- Explorar animações CSS;
+- Desenvolver um design responsivo, utilizando display Grid e mixins do Sass;
+  - Focar em práticas de estilização que já facilitem a integração do design responsivo, como tamanho da fonte do html e o uso da unidade de medida **rem**.
+- Fazer uso de uma estrutura de pastas organizadas para os arquivos Sass e os componentes React;
+- Explorar acessibilidade do teclado com inputs personalizados.
+<br>
+<br>
 
-In the project directory, you can run:
+## ✮ Como usar:
 
-### `npm start`
+> Clone este repositório
+```bash
+git clone https://github.com/tat4Souza/sass-training.git
+```
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Acesse a pasta do projeto e instale as dependências
+```bash
+cd sass-training
+npm install
+```
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Inicie o servidor de desenvolvimento
+```bash
+npm start
+```
+<br>
+<br>
 
-### `npm test`
+## 💻 Tecnologias usadas
+- [React](https://reactjs.org/) - Biblioteca JS
+- [Sass](https://sass-lang.com/) - Pré-processador de CSS
+- [Font Awesome](http://fontawesome.com/), [Box Icons](https://boxicons.com/) - Biblioteca de ícones personalizados
+- CSS3 | Flexbox | Grid - Layout e estilização responsiva
+- Desktop-first workflow
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✧ Aprendizados e Motivações
+&nbsp;&nbsp;&nbsp;Esse projeto foi um estudo para poder colocar em prática o que vi no curso da Udemy e poder assim, fixar melhor o conteúdo na cabeça, fazendo um design montado do zero. Além disso, queria explorar maneiras de implementar meus gostos pessoais em outras áreas que também me interessam (como arte digital e design gráfico) na minha estilização. <br>
+&nbsp;&nbsp;&nbsp;Para mim, um dos maiores desafios foi conseguir manter um design agradável e responsivo em certos elementos, como os cards. Infelizmente, não tive muito sucesso em manter o efeito de "virar a carta" em todos os tamanhos de tela, mas ainda acho uma proposta interessante para retentar futuramente! Também foi uma ótima oportunidade para começar a testar as *Refs* do React para controlar as funções do teclado em inputs personalizados.
+<br>
+<br>
 
-### `npm run build`
+## ✮ Imagens e Artes
+&nbsp;&nbsp;&nbsp;As artes utilizadas nesse projeto são autorais e **não** estão disponíveis para uso fora deste repositório. Não podem ser reproduzidas ou utilizadas em projetos comerciais sem autorização prévia.
+<br>
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🕮 Autor
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub - [Taís Souza](https://github.com/tat4Souza)
+- Frontend Mentor - [@tat4Souza](https://www.frontendmentor.io/profile/tat4Souza)
+- Linkedin - [Taís Souza](https://www.linkedin.com/in/tais-f-souza/)
+- Instragram de Artes - [tatazzo](https://www.instagram.com/tatazzo/)
