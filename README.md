@@ -1,9 +1,13 @@
-# Projeto para treino de SASS
+# Projeto Pessoal - treino Sass e Metodologia BEM
 Aplicação web com o propósito de praticar as habilidades adquiridas no curso oferecido pela Udemy: [**Advanced CSS and Sass: Flexbox, Grid, Animations and more.**](https://www.udemy.com/share/101Wmq3@d175uiXmGIfkya03NIEqhy-bOudDJdMLGJhyvZYyikkPkUQgATgJVFOg4PBVEfzZwA==/)
 <br> Projeto criado com o [Create React App](https://github.com/facebook/create-react-app)
 
-## 🎞️ Preview
-*Preview em breve...*
+## 📷 Preview 
+<a href="https://youtu.be/XDgmoi54qw8" target="_blank">
+  <img src="./public/image/Tatazzo Sass - thumbnail.png" alt="Sass Funcionando" />
+</a>
+<br>
+<br>
 
 ## ✧ Objetivos
 - Explorar animações CSS;
@@ -36,7 +40,7 @@ npm start
 <br>
 <br>
 
-## 💻 Tecnologias usadas
+## 🖳 Tecnologias usadas
 - [React](https://reactjs.org/) - Biblioteca JS
 - [Sass](https://sass-lang.com/) - Pré-processador de CSS
 - [Font Awesome](http://fontawesome.com/), [Box Icons](https://boxicons.com/) - Biblioteca de ícones personalizados
@@ -46,7 +50,8 @@ npm start
 
 ## ✧ Aprendizados e Motivações
 &nbsp;&nbsp;&nbsp;Esse projeto foi um estudo para poder colocar em prática o que vi no curso da Udemy e poder assim, fixar melhor o conteúdo na cabeça, fazendo um design montado do zero. Além disso, queria explorar maneiras de implementar meus gostos pessoais em outras áreas que também me interessam (como arte digital e design gráfico) na minha estilização. <br>
-&nbsp;&nbsp;&nbsp;Para mim, um dos maiores desafios foi conseguir manter um design agradável e responsivo em certos elementos, como os cards. Infelizmente, não tive muito sucesso em manter o efeito de "virar a carta" em todos os tamanhos de tela, mas ainda acho uma proposta interessante para retentar futuramente! Também foi uma ótima oportunidade para começar a testar as *Refs* do React para controlar as funções do teclado em inputs personalizados.
+&nbsp;&nbsp;&nbsp;Para mim, um dos maiores desafios foi conseguir manter um design agradável e responsivo em certos elementos, como os cards. Infelizmente, não tive muito sucesso em manter o efeito de "virar a carta" em todos os tamanhos de tela, mas ainda acho uma proposta interessante para retentar futuramente! Também foi uma ótima oportunidade para começar a testar as *Refs* do React para controlar as funções do teclado em inputs personalizados. <br>
+&nbsp;&nbsp;&nbsp;Em projetos futuros, gostaria de melhorar a responsividade e planejar de antemão o design completo do site antes de começá-lo de fato. Esse treino de Sass ainda tem bastante espaço para melhorias, como animações de scroll e design mais amigável para telas de diferentes tamanhos, mas no momento, deixarei como está.
 <br>
 <br>
 
