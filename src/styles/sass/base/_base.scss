@@ -23,3 +23,7 @@ body {
   color: $gray-550;
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: rgba($color-black, 0.1);
+}
